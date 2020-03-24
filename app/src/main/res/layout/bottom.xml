@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/bottom_bar"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/weixin"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <ImageButton
+            android:id="@+id/img_winxin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/tab_weixin_pressed"
+            android:src="@drawable/tab_weixin_pressed"
+            android:clickable="false"
+            />
+
+
+        <TextView
+            android:id="@+id/test_winxin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="微信"
+            android:textColor="#ffffff"
+            android:clickable="false"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/frd"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/img_frd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/tab_find_frd_normal"
+            android:src="@drawable/tab_find_frd_normal"
+            android:clickable="false"
+            />
+
+        <TextView
+            android:id="@+id/text_frd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="朋友"
+            android:textColor="#ffffff"
+            android:clickable="false"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/contact"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/img_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:contentDescription="@string/app_name"
+            android:clickable="false"
+            app:srcCompat="@drawable/tab_address_normal"
+            android:src = "@drawable/tab_address_normal"/>
+
+        <TextView
+            android:id="@+id/text_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="通讯录"
+            android:textColor="#ffffff"
+            android:clickable="false"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/setting"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/img_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000000"
+            android:contentDescription="@string/app_name"
+            app:srcCompat="@drawable/tab_settings_normal"
+            android:clickable="false"
+            android:src="@drawable/tab_settings_normal"/>
+
+        <TextView
+            android:id="@+id/text_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="#ffffff"
+            android:clickable="false"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</LinearLayout>
