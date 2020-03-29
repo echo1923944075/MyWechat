@@ -3,16 +3,24 @@ import android.app.Activity;
 import android.app.FragmentTransaction;
 import android.app.Fragment;
 import android.app.FragmentManager;
+import android.content.Context;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.view.Window;
 import android.os.Bundle;
 import android.widget.ImageButton;
 import android.widget.LinearLayout;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class MainActivity extends Activity implements View.OnClickListener{
 
-    public Fragment mTab01 = new weixinFragment();
+    private Fragment mTab01 = new weixinFragment();
     private Fragment mTab02 = new frdFragment();
     private Fragment mTab03 = new contactFragment();
     private Fragment mTab04 = new settingFragment();
@@ -29,7 +37,7 @@ public class MainActivity extends Activity implements View.OnClickListener{
     private ImageButton mImgContact;
     private ImageButton mImgSetting;
 
-
+    private List<String> mList = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,8 +47,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
         initView();
         initFragment();
         initEvent();
-
-
        selectFragment(0);
     }
 
@@ -136,6 +142,6 @@ public class MainActivity extends Activity implements View.OnClickListener{
         mTabSetting.setOnClickListener(this);
 
     }
-
+    //本地数据库
 
 }
