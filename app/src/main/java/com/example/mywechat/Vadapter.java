@@ -32,16 +32,13 @@ public class Vadapter extends RecyclerView.Adapter<Vadapter.myviewHolder> {
     public Vadapter.myviewHolder onCreateViewHolder(ViewGroup parent, int i) {
         View itemview = LayoutInflater.from(context).inflate(R.layout.item,parent,false);
         return new myviewHolder(itemview);
-//        infalter = LayoutInflater.from(mContext).inflate(R.layout.item,parent,false);
-//        myviewHolder myviewholder = new myviewHolder(infalter);
-//        return myviewholder;
 
     }
 
     @Override
     public void onBindViewHolder(Vadapter.myviewHolder holder, int posititon) {
         holder.tvContent.setText(mList.get(posititon));
-//        holder.tvContent.setText();
+//      holder.tvContent.setText();
     }
 
     @Override

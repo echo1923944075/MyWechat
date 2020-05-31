@@ -16,7 +16,7 @@
         android:paddingLeft="10dp">
 
         <ImageButton
-            android:id="@+id/bt_back"
+            android:id="@+id/imageButton"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@drawable/back_arrow" />
@@ -49,13 +49,6 @@
         android:layout_weight="1"
         android:gravity="right|center_vertical"
         android:orientation="vertical"
-        android:paddingRight="10dp">
-
-        <ImageButton
-            android:id="@+id/ib_add"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/add_friend" />
-    </LinearLayout>
+        android:paddingRight="10dp"/>
 
 </LinearLayout>

@@ -16,4 +16,5 @@
     </FrameLayout>
 
     <include layout="@layout/bottom"></include>
+
 </LinearLayout>
